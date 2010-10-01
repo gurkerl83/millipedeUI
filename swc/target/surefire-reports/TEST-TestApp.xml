@@ -1,0 +1,3 @@
+<testsuite errors="0" failures="0" name="TestApp" tests="1" time="0">
+  <testcase name="testGreeting" time="0"/>
+</testsuite>
