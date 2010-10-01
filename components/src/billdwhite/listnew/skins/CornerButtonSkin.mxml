@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:mx="library://ns.adobe.com/flex/mx"
+    xmlns:s="library://ns.adobe.com/flex/spark">
+    
+    <fx:Metadata>
+        [HostComponent("spark.components.supportClasses.SkinnableComponent")]
+    </fx:Metadata>
+    
+    <fx:Script>
+        <![CDATA[
+            
+            [Bindable]
+            public var _cornerSize:Number = 24;
+            
+            
+            
+            override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+            {
+                super.updateDisplayList(unscaledWidth, unscaledHeight);
+                
+                cornerPolygon.data = pathData;
+            }
+            
+            
+            
+            private function get pathData():String 
+            {
+                return "M " + width + " " + height + " " +
+                       "L " + width + " " + (height - _cornerSize) + " " + 
+                       "L " + (width - _cornerSize) + " " + height + " " +
+                       "L " + width + " " + height;
+            }
+        ]]>
+    </fx:Script>
+    
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="up" />
+        <s:State name="over" />
+        <s:State name="down" />
+        <s:State name="disabled" />
+    </s:states>
+    
+    <s:Path 
+        id="cornerPolygon">
+        <s:stroke>
+            <s:SolidColorStroke
+                id="cornerStroke"
+                color="0x949494"
+                alpha=".75"
+                weight="1" />
+        </s:stroke>
+        <s:fill>
+            <s:SolidColor
+                id="cornerFill"
+                color="0x949494"
+                alpha="1" />
+        </s:fill>
+    </s:Path>
+    
+    <s:BitmapImage
+        id="cornerImage"
+        bottom="3"
+        right="3"
+        source="@Embed('/billdwhite/listnew/assets/images/ResizeHandle.png')" />
+    
+    <s:Line
+        id="separatorLine"
+        xFrom="{width - 1}"
+        yFrom="0"
+        xTo="{width - _cornerSize}"
+        yTo="{height - 1}">
+        <s:stroke>
+            <s:SolidColorStroke
+                color="0x000000"
+                alpha="1"
+                weight="1" />               
+        </s:stroke>
+    </s:Line>
+    
+    <s:Line
+        xFrom="0"
+        yFrom="{height}"
+        xTo="{width}"
+        yTo="{height}">
+        <s:stroke>
+            <s:SolidColorStroke
+                color="0x333333"
+                alpha="1"
+                weight="1" />               
+        </s:stroke>
+    </s:Line>
+    
+    <s:Line
+        xFrom="{width}"
+        yFrom="0"
+        xTo="{width}"
+        yTo="{height}">
+        <s:stroke>
+            <s:SolidColorStroke
+                color="0x333333"
+                alpha="1"
+                weight="1" />               
+        </s:stroke>
+    </s:Line>
+    
+</s:Skin>

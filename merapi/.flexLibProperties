@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="merapi.io.utils.MessageLengthReader"/>
+    <classEntry path="merapi.io.utils.MessageReader"/>
+    <classEntry path="merapi.io.utils.MessageRespondersDispatcher"/>
+    <classEntry path="merapi.io.amf.DummyAMF3Reader"/>
+    <classEntry path="reconnectMerapi"/>
+    <classEntry path="merapi.io.amf.AMF3Reader"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

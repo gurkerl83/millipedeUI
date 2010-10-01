@@ -1,0 +1,7 @@
+cursor_resize.gif -> resize
+
+clear.gif
+close.gif
+mac_clear.png
+magnifying_glass.png -> prompt
+

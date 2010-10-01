@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkSkin 
+    xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:s="library://ns.adobe.com/flex/spark"
+    xmlns:fb="http://ns.adobe.com/flashbuilder/2009"
+    alpha.disabled="0.5"
+    blendMode="normal">
+
+    <fx:Metadata>
+        <![CDATA[[
+            HostComponent("spark.components.TextInput")]
+        ]]>
+    </fx:Metadata>
+
+    <fx:Script>
+        <![CDATA[
+            import spark.events.TextOperationEvent;
+
+            
+            
+            private static const focusExclusions:Array = ["textDisplay"];
+            
+            
+            
+            [Embed(source="/billdwhite/listnew/assets/images/CloseButtonLight.png")]
+            public static const WINDOW_CLOSE_BUTTON_LIGHT:Class;
+            
+            [Embed(source="/billdwhite/listnew/assets/images/CloseButtonDark.png")]
+            public static const WINDOW_CLOSE_BUTTON_DARK:Class;
+
+
+            
+            /**
+             *  @private
+             */
+            override public function get focusSkinExclusions():Array
+            {
+                return focusExclusions;
+            }
+
+            
+            
+            protected function clearButton_clickHandler(event:MouseEvent):void
+            {
+                // TODO Auto-generated method stub
+            }
+
+            
+
+            protected function textDisplay_changeHandler(event:TextOperationEvent):void
+            {
+                // TODO Auto-generated method stub
+            }
+
+        ]]>
+    </fx:Script>
+
+    <s:states>
+        <s:State name="empty" />
+        <s:State name="normal" />
+        <s:State name="up" />
+        <s:State name="over" />
+        <s:State name="down" />
+        <s:State name="disabled" />
+    </s:states>
+
+    <s:Rect 
+        id="border"
+        bottom="0"
+        left="0"
+        right="0"
+        top="0">
+        <s:stroke>
+            <s:SolidColorStroke 
+                id="borderStroke"
+                weight="1" />
+        </s:stroke>
+    </s:Rect>
+
+    <s:Rect 
+        id="background"
+        bottom="1"
+        left="1"
+        right="1"
+        top="1">
+        <s:fill>
+            <s:SolidColor 
+                id="bgFill"
+                color="0xFFFFFF" />
+        </s:fill>
+    </s:Rect>
+
+    <s:Rect 
+        id="shadow"
+        height="1"
+        left="1"
+        right="1"
+        top="1">
+        <s:fill>
+            <s:SolidColor 
+                alpha="0.12"
+                color="0x000000" />
+        </s:fill>
+    </s:Rect>
+
+    <s:RichEditableText 
+        id="textDisplay"
+        bottom="1"
+        left="1"
+        right="1"
+        top="1"
+        paddingLeft="10"
+        verticalAlign="middle"
+        widthInChars="10" 
+        change="textDisplay_changeHandler(event)"/>
+    
+    <s:Button
+        id="clearButton"
+        width="14"
+        height="14"
+        right="7"
+        top="7" 
+        click="clearButton_clickHandler(event)"
+        styleName="clearingButton"
+        excludeFrom="empty"/>
+
+</s:SparkSkin>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+    xmlns:fx="http://ns.adobe.com/mxml/2009" 
+    xmlns:s="library://ns.adobe.com/flex/spark" 
+    xmlns:mx="library://ns.adobe.com/flex/mx">
+
+    <fx:Metadata>
+        [HostComponent("billdwhite.listnew.ListTile")]
+    </fx:Metadata>
+    
+	<fx:Script>
+        <![CDATA[
+			import assets.icons.*;
+			
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+            {
+                super.updateDisplayList(unscaledWidth, unscaledHeight);
+                
+                cornerButton.right = 1;
+				cornerButton.top = 1;
+            }
+
+			protected function cornerButton_initializeHandler(event:FlexEvent):void
+			{
+				
+				iconCycle.addItem({iconClass:assets.icons.Connect, iconColor:0x00FF00, iconName:"Connect"});
+				iconCycle.addItem({iconClass:assets.icons.Disconnect, iconColor:0xFF0000, iconName:"Disconnect"});
+				
+				var btn:Button = Button(event.currentTarget);
+				if(hostComponent.teacher.status == "connect") {
+					btn.setStyle("iconClass", iconCycle.getItemAt(this.iconCyclePtr).iconClass);
+					btn.setStyle("iconColor", iconCycle.getItemAt(this.iconCyclePtr).iconColor);
+					iconCyclePtr++;
+				} else {
+					iconCyclePtr++;
+					btn.setStyle("iconClass", iconCycle.getItemAt(this.iconCyclePtr).iconClass);
+					btn.setStyle("iconColor", iconCycle.getItemAt(this.iconCyclePtr).iconColor);
+					iconCyclePtr = 0;
+				}
+			}
+
+        ]]>
+    </fx:Script>
+    
+	
+	<fx:Script>
+		<![CDATA[
+			import assets.icons.Connect;
+			import assets.icons.Disconnect;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			private var iconCycle:ArrayCollection = new ArrayCollection;
+			
+			private var iconCyclePtr:int = 0;
+			
+			protected function toggleIcon(event:MouseEvent):void
+			{
+				var btn:Button = Button(event.currentTarget);
+				if (iconCyclePtr >= iconCycle.length) {
+					this.iconCyclePtr = 0;
+				}
+				btn.setStyle("iconClass", iconCycle.getItemAt(this.iconCyclePtr).iconClass);
+				btn.setStyle("iconColor", iconCycle.getItemAt(this.iconCyclePtr).iconColor);
+				
+				if (iconCycle.getItemAt(this.iconCyclePtr).iconName == "Connect")
+					hostComponent.teacher.status = "connect";
+				else
+					hostComponent.teacher.status = "disconnect";
+				iconCyclePtr++;
+			}
+		]]>
+	</fx:Script>
+	
+	
+    <fx:Declarations>
+
+        <s:DropShadowFilter
+            id="dropShadowFilter"
+            xmlns:filters="flash.filters.*"
+            angle="45"
+            blurX="3"
+            blurY="3"
+            distance="3"
+            alpha="0.4"
+            color="0x000000"
+            knockout="false"
+            quality="1"
+            strength="1" />
+        
+        <mx:SoundEffect
+            id="click01SoundEffect"
+            source="@Embed(source='/billdwhite/listnew/assets/sounds/click01.mp3')" />
+    
+        <mx:SoundEffect
+            id="click02SoundEffect"
+            source="@Embed(source='/billdwhite/listnew/assets/sounds/click02.mp3')" />
+    
+        <mx:SoundEffect
+            id="click03SoundEffect"
+            source="@Embed(source='/billdwhite/listnew/assets/sounds/click03.mp3')" />
+        
+    </fx:Declarations>
+    
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="over" />
+        <s:State name="down" />
+    </s:states>
+    
+    <s:Group
+        id="backgroundGroup"
+        top="0"
+        bottom="0"
+        left="0"
+        right="0"
+        filters.normal="{[dropShadowFilter]}">
+        
+        <s:Rect
+            id="backgroundRectangle"
+            top="0"
+            bottom="0"
+            left="0"
+            right="0">
+            <s:stroke>
+                <s:SolidColorStroke
+                    id="borderStroke"
+                    color="#2E2E2E"
+                    weight="1"
+                    alpha="1.0" />                    
+            </s:stroke>
+<!--
+			<s:fill>
+                <s:SolidColor
+                    id="backgroundFill"
+                    color="#2E2E2E"
+                    color.down="#CDCDCD"
+                    alpha="1" />
+            </s:fill>
+-->    
+		</s:Rect>
+            
+    </s:Group>
+
+    <s:Group
+        id="labelGroup"
+        x="0"
+        y="0"
+        width="{width}"
+        height="{height}"
+        mouseDownEffect="{click01SoundEffect}">
+        <s:layout>
+            <s:VerticalLayout
+                gap="10"
+                paddingLeft="10"
+                horizontalAlign="left"
+                verticalAlign="middle" />
+        </s:layout>
+        <s:Label
+            	id="nameLabel"
+            	fontSize="13" />
+		<s:Label
+            id="departmentLabel"
+            fontSize="10" />
+        <s:Label
+            id="emailLabel"
+            fontSize="10" />
+		
+    </s:Group>
+        
+	
+    <s:Button
+        id="cornerButton"
+        right="1"
+		top="1"
+        width="{hostComponent.optionsSize}"
+        height="{hostComponent.optionsSize}"
+        styleName="cornerButton"
+		mouseDown="toggleIcon(event)" initialize="cornerButton_initializeHandler(event)"/>
+	<!--
+	mouseDownEffect="{click02SoundEffect}"
+	-->
+	
+	
+	<!--
+	<s:Group horizontalCenter="0" verticalCenter="0">
+		<s:Rect width="100%" height="100%">
+			<s:stroke>
+				<mx:SolidColorStroke weight="1" color="0x000000" alpha="0.5"/>
+			</s:stroke>
+		</s:Rect>
+		<s:HGroup verticalAlign="middle">
+			<s:Label text="Status" fontWeight="bold" height="20"/>
+	-->		
+	<!--	
+	</s:HGroup>
+	</s:Group>
+	-->
+</s:Skin>

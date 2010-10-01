@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="eb607042-bc1b-4752-8144-db8478d44c60" projectUUID="eb607042-bc1b-4752-8144-db8478d44c60" sdkVersion="4.5.0" uuid="2b581fff-9aa9-4a25-8432-dbdbaaba2276" version="4">
+  <projects/>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="2b581fff-9aa9-4a25-8432-dbdbaaba2276"/>
+    <linked location="E:/Development/Flex/sparkDegrafa/greensock-as3/greensock.swc" path="/linked-swc/greensock.swc" position="1" uuid="309a1e1c-da6a-4026-ba27-61f517ea73de"/>
+  </swc>
+  <misc/>
+  <theme/>
+</fxpProperties>

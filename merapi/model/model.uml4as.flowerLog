@@ -1,0 +1,374 @@
+Synchronize error. 2010-05-28 00:37:38.678
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 00:39:54.511
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 00:42:30.164
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 00:45:08.830
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 00:46:24.363
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 00:47:20.271
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:06:40.781
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:07:36.262
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:07:48.312
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:08:04.802
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:08:13.852
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:09:18.531
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:11:22.161
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:14:33.301
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:16:54.016
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:23:51.066
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+
+Synchronize error. 2010-05-28 01:24:48.501
+java.lang.RuntimeException: There was an error during the ActionScript reverse code sync operation.
+	at com.crispico.flower.mp.metamodel.codesyncas.a.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.j.f(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.e.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.b.t.execute(Unknown Source)
+	at org.eclipse.emf.common.command.BasicCommandStack.execute(BasicCommandStack.java:84)
+	at com.crispico.flower.mp.command.o.execute(Unknown Source)
+	at com.crispico.flower.mp.eclipse.t.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.NullPointerException
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesyncas.a.b.n.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.a(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.b(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.e.c(Unknown Source)
+	at com.crispico.flower.mp.metamodel.codesync.c.b.a.b.d(Unknown Source)
+	... 9 more
+
+

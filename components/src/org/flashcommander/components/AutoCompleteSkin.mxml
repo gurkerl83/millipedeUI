@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--- AutoComplete Skin: contains a List wrapped in a PopUpAnchor and a TextInput
+
+-->
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:controls="controls.*"
+    alpha.disabled=".5" xmlns:components="org.flashcommander.components.*" > 
+
+    <!-- host component -->
+    <fx:Metadata>
+    <![CDATA[ 
+    /** 
+     * @copy spark.skins.spark.ApplicationSkin#hostComponent
+     */
+        [HostComponent("org.flashcommander.components.AutoComplete")]
+    ]]>
+    </fx:Metadata> 
+	<fx:Script>
+		<![CDATA[
+			import skins.AHGenericFXGIconButtonSkin_;
+		]]>
+	</fx:Script>
+
+	<!--
+	<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		@namespace controls "controls.*";
+		@namespace components "org.flashcommander.components.*";
+		
+		.contextButton {
+			iconClass: ClassReference("assets.icons.Disconnect");
+			iconColor: #FFFFFF;
+			baseColor: #305000;
+		}
+		
+		.contextButton:over {
+			iconColor: "0x00ff00";
+			baseColor: "0xc04000";
+		}
+		
+		.contextButton:down {
+			iconColor: #00ff00;
+			baseColor: #608000;
+		}
+	</fx:Style>
+	-->
+	
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="open" />
+        <s:State name="disabled" />
+    </s:states>
+	
+	<fx:Style>
+		.popUpBox
+		{
+			backgroundColor : #e9e9e9; 
+			borderStyle : "solid";
+			paddingTop : 2;
+			paddingBottom : 2; 
+			paddingLeft : 2; 
+			paddingRight : 2;
+		}
+	</fx:Style>
+	
+	<fx:Declarations>
+		<mx:Sequence id="hideSearch">
+			<s:Scale target="{popUp.popUp}" scaleXFrom="1" scaleXTo=".1" duration="200"/>
+			<mx:SetPropertyAction target="{popUp}" name="displayPopUp" value="false"/>
+		</mx:Sequence>
+		
+		<mx:Sequence id="showSearch">
+			<mx:SetPropertyAction target="{popUp}" name="displayPopUp" value="true"/>
+			<!--<s:Scale target="{popUp.popUp}" scaleXFrom=".1" scaleXTo="1" duration="200"/>-->
+			<s:Scale target="{popUp.popUp}" scaleYFrom=".1" scaleYTo="1" duration="200"/>
+		</mx:Sequence>
+	</fx:Declarations>
+	
+    <!--- 
+        The PopUpAnchor control that opens the drop-down list. 
+    -->
+
+	<s:PopUpAnchor id="popUp"  displayPopUp="false"
+        top="0" bottom="0" left="0" right="0" 
+		
+        popUpPosition="below" styleName="popUpBox">
+        <!--popUpWidthMatchesAnchorWidth="true"-->
+        <s:Group id="dropDown" minHeight="22" width="100%">
+        
+			<components:ListAutoComplete id="list" width="100%" minWidth="22" />
+			
+        </s:Group>
+		
+    </s:PopUpAnchor>
+	
+	<!--<s:TextInput id="inputTxt" left="0" right="0" top="0" bottom="0" />
+	-->
+	<s:Button
+		id="contextButton"
+		width="16" height="16" click="showSearch.play() "/>
+		<!--
+		skinClass="skins.AHGenericFXGIconButtonSkin_"
+		-->
+		
+	<!--right="1"
+	top="1"
+	width="32"
+	height="32"
+	styleName="contextButton"
+	-->
+	<!--
+		mouseDown="toggleIcon(event)" initialize="contextButton_initializeHandler(event)"/>
+	-->
+
+</s:Skin>

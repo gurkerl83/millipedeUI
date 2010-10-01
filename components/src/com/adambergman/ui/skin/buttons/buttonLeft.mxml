@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	Copyright 2009 Adam Bergman (adambergman.com).  
+	
+	You are free to use this code in any personal or commercial projects.
+	I only ask that if you intend to use this code in any commercial project, 
+	please contact me via adambergman.com and let me know.
+-->
+
+<Skin 
+	xmlns:ai="http://ns.adobe.com/ai/2008" 
+	xmlns:d="http://ns.adobe.com/fxg/2008/dt" 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	width="25" height="25">
+	
+	<fx:Metadata>
+		[HostComponent("spark.components.Button")] 
+	</fx:Metadata>
+
+	<states>
+		<mx:State name="up"/>
+		<mx:State name="down"/>
+		<mx:State name="over"/>
+		<mx:State name="disabled"/>
+	</states>
+	
+	<Group x="0" y="0" d:id="2" d:type="layer" d:userLabel="Layer 1">
+    <Group>
+      <Group ai:knockout="0">
+        <Ellipse x="1.5" y="1.5" width="22" height="22" ai:knockout="0">
+          <fill>
+            <LinearGradient x="11" scaleX="22" rotation="90">
+              <GradientEntry color="#273a94" color.over="#69BD45" ratio="0"/>
+              <GradientEntry color="#387ec1" color.over="#183319" ratio="1"/>
+            </LinearGradient>
+          </fill>
+        </Ellipse>
+        <Ellipse x="1.5" y="1.5" width="22" height="22" ai:knockout="0">
+          <stroke>
+            <SolidColorStroke color="#ffffff" caps="none" weight="3" joints="miter" miterLimit="4"/>
+          </stroke>
+        </Ellipse>
+        <Ellipse x="1.5" y="1.5" width="22" height="22" ai:knockout="0">
+          <stroke>
+            <SolidColorStroke color="#ffffff" caps="none" weight="1" joints="miter" miterLimit="4"/>
+          </stroke>
+        </Ellipse>
+      </Group>
+    </Group>
+    <Path winding="nonZero" ai:knockout="0" data="M13.9414 17.4053L8.79492 12.2593 13.9414 7.11279" >
+      <stroke>
+        <SolidColorStroke color="#ffffff" caps="none" weight="2.5" joints="miter" miterLimit="4"/>
+      </stroke>
+    </Path>
+  </Group>
+	
+	<layout>
+		<BasicLayout/>
+	</layout>
+</Skin>

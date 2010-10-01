@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+	<!--
+
+		Copyright 2008 Marvin Herman Froeder Licensed under the Apache
+		License, Version 2.0 (the "License"); you may not use this file except
+		in compliance with the License. You may obtain a copy of the License
+		at http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+		applicable law or agreed to in writing, software distributed under the
+		License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+	-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+<!--
+	<parent>
+		<groupId>org.sonatype.flexmojos</groupId>
+		<artifactId>flexmojos-flex-super-pom</artifactId>
+		<version>${flexmojos.version}</version>
+	</parent>
+-->
+	
+	<groupId>org.millipede</groupId>
+	<artifactId>millipedeUI</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>${millipede.name} - Parent</name>
+
+	<properties>
+		<millipede.name>Millipede User Interface</millipede.name>
+
+		<!-- <flex.version>4.5.0.17855</flex.version> -->
+		<flex.version>4.5.0.17077</flex.version>
+		<flexmojos.version>4.0-alpha-5</flexmojos.version>
+
+		<!-- <spring-flex.version>1.0.3.RELEASE</spring-flex.version> -->
+	</properties>
+
+	<modules>
+		<module>swc</module>
+		<module>swf</module>
+		<module>war</module>
+		
+		<module>components</module>
+		<module>merapi</module>
+	</modules>
+
+	<repositories>
+
+		<repository>
+			<id>sonatype-flex-repository</id>
+			<url>https://repository.sonatype.org/content/groups/flexgroup</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>sonatype-public-repository</id>
+			<url>https://repository.sonatype.org/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<!-- TODO unused? -->
+		<repository>
+			<id>ObjectWEB</id>
+			<url>http://maven.ow2.org/maven2/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<!-- TODO unused? -->
+		<repository>
+			<id>epseelon-repository</id>
+			<url>http://m2repo.epseelon.org/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype-flex-mojos-repository</id>
+			<url>https://repository.sonatype.org/content/groups/flexgroup</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>sonatype-public-mojos-repository</id>
+			<url>https://repository.sonatype.org/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.5</source>
+						<target>1.5</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.sonatype.flexmojos</groupId>
+					<artifactId>flexmojos-maven-plugin</artifactId>
+					<version>${flexmojos.version}</version>
+					<extensions>true</extensions>
+					<dependencies>
+						<dependency>
+							<groupId>com.adobe.flex</groupId>
+							<artifactId>compiler</artifactId>
+							<version>${flex.version}</version>
+							<type>pom</type>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<!-- TODO? unused? -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-reactor-plugin</artifactId>
+				<version>1.0</version>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<developers>
+		<developer>
+			<id>gurkerl</id>
+			<name>Markus Gritsch</name>
+			<organization>Millipede</organization>
+			<organizationUrl>http://www.millipede.me/</organizationUrl>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:git://github.com/gurkerl83/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:gurkerl83/${project.artifactId}.git</developerConnection>
+		<url>http://github.com/gurkerl83/${project.artifactId}</url>
+	</scm>
+	
+
+</project>

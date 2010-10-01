@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>millipedeUI</artifactId>
+    <groupId>org.millipede</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <!-- <relativePath>./millipedeUI/</relativePath> -->
+  </parent>
+  <groupId>org.millipede</groupId>
+  <artifactId>components</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>swc</packaging>
+  <name>components</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.adobe.flex.framework</groupId>
+      <artifactId>flex-framework</artifactId>
+      <version>${flex.version}</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.adobe.flexunit</groupId>
+      <artifactId>flexunit</artifactId>
+      <version>0.85</version>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.millipede.lib.flex</groupId>
+    	<artifactId>greensock</artifactId>
+    	<version>1.0.0</version>
+    	<type>swc</type>
+    	<scope>internal</scope> 
+    </dependency>
+  </dependencies>
+  <build>
+    <!--
+    <sourceDirectory>src/main/flex</sourceDirectory>
+    <testSourceDirectory>src/test/flex</testSourceDirectory>
+    -->
+    <sourceDirectory>src</sourceDirectory>
+    
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.flexmojos</groupId>
+        <artifactId>flexmojos-maven-plugin</artifactId>
+        <version>${flexmojos.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

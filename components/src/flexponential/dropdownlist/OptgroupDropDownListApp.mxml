@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:local="flexponential.dropdownlist.*" width="400" viewSourceURL="srcview/index.html">
+
+    <s:Label x="53" y="9" text="DropDownList simulating optgroups" fontSize="16" fontWeight="bold"/>
+    
+    <local:OptgroupDropDownList id="ddl" prompt="Choose player" labelField="text" skinClass="flexponential.dropdownlist.OptgroupDropDownListSkin" width="150" x="128" y="41">
+        <s:ArrayList>
+            <local:SelectableItem text="Forwards" selectionEnabled="false" />
+            <local:SelectableItem text="Joe Thornton" />
+            <local:SelectableItem text="Patrick Marleau" />
+            <local:SelectableItem text="Danny Heatley" />
+            <local:SelectableItem text="Defensemen" selectionEnabled="false" />
+            <local:SelectableItem text="Dan Boyle" />
+            <local:SelectableItem text="Scott Niedermeyer" />
+            <local:SelectableItem text="Goalies" selectionEnabled="false" />
+            <local:SelectableItem text="Roberto Luongo" />
+            <local:SelectableItem text="Martin Brodeur" />
+        </s:ArrayList>
+    </local:OptgroupDropDownList>
+    
+    <s:Button label="Deselect" click="ddl.selectedIndex = -1" x="308"  y="41"/>
+    <s:Label x="42" y="46" text="Olympic MVP:"/>
+    
+</s:Application>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+    xmlns:fx="http://ns.adobe.com/mxml/2009" 
+    xmlns:s="library://ns.adobe.com/flex/spark" 
+    xmlns:mx="library://ns.adobe.com/flex/mx"
+    filters="{[dropShadowFilter]}">
+    
+    <fx:Metadata>
+        [HostComponent("billdwhite.listnew.ListTileOptions")]
+    </fx:Metadata>
+    
+    <fx:Script>
+        <![CDATA[
+            
+            import com.greensock.TweenMax;
+            
+            import mx.core.SoundAsset;
+            import mx.effects.easing.Cubic;
+            
+            
+
+            /* ===================================================================================== bindable members ========== */
+
+            
+            
+            [Bindable]
+            public var _cornerSize:Number = 24;
+            
+            [Bindable] 
+            [Embed(source="/billdwhite/listnew/assets/sounds/click03.mp3")] 
+            private var closeSoundClass:Class;
+            
+            
+
+            /* ===================================================================================== members =================== */
+
+            
+            
+            public var closeSound:SoundAsset = SoundAsset(new closeSoundClass());
+            
+            
+            
+            
+            override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+            {
+                super.updateDisplayList(unscaledWidth, unscaledHeight);
+                                
+                optionsPolygon.data = optionsPolygonPathData;
+                cornerPolygon.data = cornerPolygonPathData;
+            }
+            
+            
+            
+            private function get optionsPolygonPathData():String
+            {
+                return "M " + _cornerSize + " " + (height - _cornerSize) + " " +
+                       "L " + width + " " + (height - _cornerSize) + " " +
+                       "L " + (width - _cornerSize) + " " + (height-1) + " " +
+                       "L " + "0" + " " + (height-1) + " " +
+                       "L " + _cornerSize + " " + (height - _cornerSize);
+            }
+            
+            
+            
+            private function get cornerPolygonPathData():String
+            {
+                return "M " + width + " " + (height-1) + " " +
+                       "L " + width + " " + (height - _cornerSize) + " " +
+                       "L " + (width - _cornerSize) + " " + (height-1) + " " +
+                       "L " + width + " " + (height-1);
+            }
+            
+            
+        ]]>
+    </fx:Script>
+    
+    <fx:Declarations>
+        
+        <s:DropShadowFilter
+            id="dropShadowFilter"
+            angle="90"
+            blurX="2"
+            blurY="2"
+            distance="1"
+            alpha=".6"
+            color="#000000"
+            quality="1"
+            strength="1"
+            knockout="false"
+            inner="false"
+            hideObject="false" />
+
+        <mx:SoundEffect
+            id="click01SoundEffect"
+            source="@Embed(source='/billdwhite/listnew/assets/sounds/click01.mp3')" />
+    
+        <mx:SoundEffect
+            id="click02SoundEffect"
+            source="@Embed(source='/billdwhite/listnew/assets/sounds/click02.mp3')" />
+    
+        <mx:SoundEffect
+            id="click03SoundEffect"
+            source="@Embed(source='/billdwhite/listnew/assets/sounds/click03.mp3')" />
+        
+    </fx:Declarations>
+    
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="up" />
+        <s:State name="over" />
+        <s:State name="down" />
+        <s:State name="disabled" />
+    </s:states>
+
+    <s:SkinnableComponent
+        id="cornerMask"
+        x="0"
+        y="0"
+        width="{width}"
+        height="{height}"
+        alpha="1"
+        styleName="optionsMask" />
+    
+    <s:Group
+        id="optionsPanel"
+        x="{-(width - height)}"
+        y="0"
+        width="{width}"
+        height="{height}"
+        styleName="optionsPanel"
+        mask="{cornerMask}">
+        
+        <s:Path
+            id="optionsPolygon">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0xCCCCCC"
+                    alpha="1"
+                    weight="1" />
+            </s:stroke>
+            <s:fill>
+                <s:SolidColor
+                    color="0x8C8C8C"
+                    alpha="1" />
+            </s:fill>
+        </s:Path>
+        
+        <s:Path
+            id="cornerPolygon">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0xAAAAAA"
+                    alpha="1"
+                    weight="1" />
+            </s:stroke>
+            <s:fill>
+                <s:SolidColor
+                    color="0xAAAAAA"
+                    alpha="1" />
+            </s:fill>
+        </s:Path>
+            
+        <s:Line
+            xFrom="{width - _cornerSize}"
+            yFrom="{height - 1}"
+            xTo="{width - 2}"
+            yTo="1">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0xC9CBCC"
+                    weight="1"
+                    alpha="1" />
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="{width - _cornerSize - 1}"
+            yFrom="{height - 1}"
+            xTo="{width - 3}"
+            yTo="1">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0xA4A4A4"
+                    weight="1"
+                    alpha="1" />
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="0"
+            yFrom="1"
+            xTo="{width - 2}"
+            yTo="1">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x6D6F70"
+                    weight="1"
+                    alpha="1" />
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="0"
+            yFrom="2"
+            xTo="{width - 3}"
+            yTo="2">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x6D6F70"
+                    weight="1"
+                    alpha="1" />
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="0"
+            yFrom="{height - 2}"
+            xTo="{width - _cornerSize - 1}"
+            yTo="{height - 2}">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x6D6F70"
+                    weight="1"
+                    alpha="1" />
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="0"
+            yFrom="{height - 1}"
+            xTo="{width - _cornerSize}"
+            yTo="{height - 1}">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0xC9CBCC"
+                    weight="1"
+                    alpha="1" />
+            </s:stroke>
+        </s:Line>
+    
+        <s:Line
+            xFrom="{width - 1}"
+            yFrom="0"
+            xTo="{width - _cornerSize}"
+            yTo="{height - 1}">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x000000"
+                    alpha="1"
+                    weight="1" />               
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="0"
+            yFrom="0"
+            xTo="{width}"
+            yTo="0">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x333333"
+                    alpha="1"
+                    weight="1" />               
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="0"
+            yFrom="{height}"
+            xTo="{width}"
+            yTo="{height}">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x333333"
+                    alpha="1"
+                    weight="1" />               
+            </s:stroke>
+        </s:Line>
+        
+        <s:Line
+            xFrom="{width}"
+            yFrom="0"
+            xTo="{width}"
+            yTo="{height}">
+            <s:stroke>
+                <s:SolidColorStroke
+                    color="0x333333"
+                    alpha="1"
+                    weight="1" />               
+            </s:stroke>
+        </s:Line>
+        
+        <s:Group
+            id="optionsGroup"
+            top="4"
+            bottom="4"
+            left="4"
+            right="4"
+            width="{width - hostComponent.cornerSize}"
+            height="100%">
+            
+            <s:layout>
+                <s:HorizontalLayout 
+                    gap="5"
+                    horizontalAlign="right"
+                    verticalAlign="middle"
+                    paddingRight="25" />
+            </s:layout>
+
+            <s:Button
+                id="editButton"
+                styleName="flatButton"
+                fontSize="9"
+                fontWeight="normal"
+                label="edit"
+                height="18"
+                width="60"
+                mouseDownEffect="{click01SoundEffect}"/>
+
+            <s:Button
+                id="deleteButton"
+                styleName="flatButton"
+                fontSize="9"
+                fontWeight="normal"
+                label="delete"
+                height="18"
+                width="60"
+                mouseDownEffect="{click01SoundEffect}" />
+
+        </s:Group>
+
+        <s:BitmapImage
+            id="cornerImage"
+            bottom="2"
+            right="2"
+            source="@Embed('/billdwhite/listnew/assets/images/ResizeHandle.png')" />
+
+    </s:Group>
+    
+</s:Skin>

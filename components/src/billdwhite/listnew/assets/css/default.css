@@ -1,0 +1,193 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace local "billdwhite.listnew.*";
+@namespace spark "spark.skins.spark.*";
+
+
+
+
+s|Panel
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.CustomPanelSkin___");
+    color: #EEEEEE;
+    cornerRadius: 4;
+    roundedBottomCorners: true;
+    highlightAlphas: 0.35, 0;
+    borderColor: #000000;
+    borderAlpha: 1;
+    borderThicknessTop: 0;
+    borderThicknessLeft: 2;
+    borderThicknessBottom: 2;
+    borderThicknessRight: 2;    
+    roundedBottomCorners: true;
+    cornerRadius: 4; 
+    headerHeight: 35;
+    headerColors: #333333, #000000;
+    backgroundAlpha: 1;
+    backgroundColor: #AAAAAA;
+    shadowDistance: 0;
+    shadowDirection: center;
+    dropShadowColor: #000000;
+}
+
+
+
+s|Panel #titleDisplay 
+{
+    color: white;
+}
+
+
+
+s|ScrollBarBase 
+{
+    chrome-color: #333333;
+}
+
+
+
+local|ListTile 
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.ListTileSkin");
+    color: #DDDDDD;
+}
+
+
+
+local|ListTile:down
+{
+    color: #000000;
+}
+
+
+
+local|ListTileOptions 
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.ListTileOptionsSkin");
+}
+
+
+
+local|FilterView 
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.FilterViewSkin");
+}
+
+
+
+local|ClearingTextInput
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.ClearingTextInputSkin");
+}
+
+
+
+s|TextInput
+{
+    borderStyle: inset;
+    borderColor: #333333;
+    color: #000000;
+    cornerRadius: 6;
+    backgroundAlpha: .9;
+    disabled-color: #111111;
+    disabled-overlay-alpha: 0.3;
+}
+
+
+
+.clearingButton
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.ClearButtonSkin");
+}
+
+
+
+.enabledTextInput
+{
+    color: #000000;
+    dropShadowEnabled: true;
+    font-weight: bold;
+}
+
+
+
+.cornerButton
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.CornerButtonSkin");
+}
+
+
+
+.optionsMask
+{
+    skin-class: ClassReference("billdwhite.listnew.skins.ListTileOptionsMaskSkin");
+}
+
+
+/*
+.filterItemLabel
+{
+    color: #000000;
+    font-weight: normal;
+    font-size: 8;
+}
+
+
+
+.filterLabel
+{
+    color: #000000;
+    font-weight: normal;
+    font-size: 11;
+}
+*/
+
+
+s|Button
+{
+    cornerRadius: 2;
+    paddingLeft: 0;
+    paddingRight: 0;
+    highlightAlphas: 0, 0;
+    fillAlphas: 0.52, 0.67, 0.75, 0.65;
+    fillColors: #666666, #333333, #666666, #666666;
+    color: #CCCCCC;
+    borderColor: #333333;
+    chromeColor: #333333;
+}
+
+
+
+s|Button:over
+{
+    color: #FFFFFF
+}
+
+
+
+.flatButton
+{
+    color: #CCCCCC;
+    textRollOverColor: #FFFFFF;
+    background-color: #AAAAAA;
+    selected-fill-colors: #AAAAAA;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.flatButton:over
+{
+    color: #FFFFFF
+}
+
+
+
+.instructions
+{
+    color: #000000;
+    font-size: 12;
+    font-weight: normal;
+}
